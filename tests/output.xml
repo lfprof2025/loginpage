@@ -1,159 +1,452 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.13.1 on win32)" generated="2025-06-02T12:36:23.210714" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3 (Python 3.13.1 on win32)" generated="2025-06-02T13:35:38.521860" rpa="false" schemaversion="5">
 <suite id="s1" name="Teste Login" source="C:\Users\User\Desktop\ESTUDO\projeto-robot\tests\teste_login.robot">
-<test id="s1-t1" name="Login Com Sucesso" line="14">
+<test id="s1-t1" name="Login Com Sucesso" line="13">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:23.668835" level="INFO">Opening browser 'chrome' to base url 'file://C:\Users\User\Desktop\ESTUDO\projeto-robot\tests/../index.html'.</msg>
+<msg time="2025-06-02T13:35:39.009242" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/index.html'.</msg>
+<msg time="2025-06-02T13:35:45.917020" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-02T13:35:45.917360" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782F59F4]
+	(No symbol) [0x00007FF6782E6789]
+	(No symbol) [0x00007FF6782E84F8]
+	(No symbol) [0x00007FF6782E6A96]
+	(No symbol) [0x00007FF6782E6516]
+	(No symbol) [0x00007FF6782E61DA]
+	(No symbol) [0x00007FF6782E3E8A]
+	(No symbol) [0x00007FF6782E465C]
+	(No symbol) [0x00007FF6782FCF3A]
+	(No symbol) [0x00007FF6783A013E]
+	(No symbol) [0x00007FF67837737A]
+	(No symbol) [0x00007FF67839F39C]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</msg>
 <arg>${LOGIN_PAGE}</arg>
-<arg>${BROWSER}</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T12:36:23.668211" elapsed="2.657965"/>
+<status status="FAIL" start="2025-06-02T13:35:39.008597" elapsed="6.917714">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782F59F4]
+	(No symbol) [0x00007FF6782E6789]
+	(No symbol) [0x00007FF6782E84F8]
+	(No symbol) [0x00007FF6782E6A96]
+	(No symbol) [0x00007FF6782E6516]
+	(No symbol) [0x00007FF6782E61DA]
+	(No symbol) [0x00007FF6782E3E8A]
+	(No symbol) [0x00007FF6782E465C]
+	(No symbol) [0x00007FF6782FCF3A]
+	(No symbol) [0x00007FF6783A013E]
+	(No symbol) [0x00007FF67837737A]
+	(No symbol) [0x00007FF67839F39C]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:26.327167" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${VALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:26.326665" elapsed="0.146235"/>
+<status status="NOT RUN" start="2025-06-02T13:35:45.927922" elapsed="0.000091"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:26.473802" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:26.473390" elapsed="0.097146"/>
+<status status="NOT RUN" start="2025-06-02T13:35:45.929000" elapsed="0.000062"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:26.571194" level="INFO">Clicking button 'xpath=//button'.</msg>
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:26.570926" elapsed="0.216455"/>
+<status status="NOT RUN" start="2025-06-02T13:35:45.929348" elapsed="0.000051"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-02T12:36:27.788874" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-02T12:36:26.787944" elapsed="1.001182"/>
+<status status="NOT RUN" start="2025-06-02T13:35:45.929660" elapsed="0.000052"/>
 </kw>
 <kw name="Location Should Contain" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:27.799650" level="INFO">Current location contains 'dashboard.html'.</msg>
 <arg>dashboard.html</arg>
 <doc>Verifies that the current URL contains ``expected``.</doc>
-<status status="PASS" start="2025-06-02T12:36:27.789851" elapsed="0.010021"/>
+<status status="NOT RUN" start="2025-06-02T13:35:45.929943" elapsed="0.000045"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-02T12:36:27.800528" elapsed="2.268515"/>
+<status status="NOT RUN" start="2025-06-02T13:35:45.930208" elapsed="0.000042"/>
 </kw>
-<status status="PASS" start="2025-06-02T12:36:23.666981" elapsed="6.404081"/>
+<status status="FAIL" start="2025-06-02T13:35:39.007215" elapsed="6.923399">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782F59F4]
+	(No symbol) [0x00007FF6782E6789]
+	(No symbol) [0x00007FF6782E84F8]
+	(No symbol) [0x00007FF6782E6A96]
+	(No symbol) [0x00007FF6782E6516]
+	(No symbol) [0x00007FF6782E61DA]
+	(No symbol) [0x00007FF6782E3E8A]
+	(No symbol) [0x00007FF6782E465C]
+	(No symbol) [0x00007FF6782FCF3A]
+	(No symbol) [0x00007FF6783A013E]
+	(No symbol) [0x00007FF67837737A]
+	(No symbol) [0x00007FF67839F39C]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</status>
 </test>
-<test id="s1-t2" name="Login Com Usuário Inválido" line="23">
+<test id="s1-t2" name="Login Com Usuário Inválido" line="22">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:30.075065" level="INFO">Opening browser 'chrome' to base url 'file://C:\Users\User\Desktop\ESTUDO\projeto-robot\tests/../index.html'.</msg>
+<msg time="2025-06-02T13:35:45.935240" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/index.html'.</msg>
+<msg time="2025-06-02T13:35:52.470297" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-02T13:35:52.470527" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782F59F4]
+	(No symbol) [0x00007FF6782E6789]
+	(No symbol) [0x00007FF6782E84F8]
+	(No symbol) [0x00007FF6782E6A96]
+	(No symbol) [0x00007FF6782E6516]
+	(No symbol) [0x00007FF6782E61DA]
+	(No symbol) [0x00007FF6782E3E8A]
+	(No symbol) [0x00007FF6782E465C]
+	(No symbol) [0x00007FF6782FCF3A]
+	(No symbol) [0x00007FF6783A013E]
+	(No symbol) [0x00007FF67837737A]
+	(No symbol) [0x00007FF67839F39C]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</msg>
 <arg>${LOGIN_PAGE}</arg>
-<arg>${BROWSER}</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T12:36:30.074442" elapsed="1.445117"/>
+<status status="FAIL" start="2025-06-02T13:35:45.934893" elapsed="6.537473">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782F59F4]
+	(No symbol) [0x00007FF6782E6789]
+	(No symbol) [0x00007FF6782E84F8]
+	(No symbol) [0x00007FF6782E6A96]
+	(No symbol) [0x00007FF6782E6516]
+	(No symbol) [0x00007FF6782E61DA]
+	(No symbol) [0x00007FF6782E3E8A]
+	(No symbol) [0x00007FF6782E465C]
+	(No symbol) [0x00007FF6782FCF3A]
+	(No symbol) [0x00007FF6783A013E]
+	(No symbol) [0x00007FF67837737A]
+	(No symbol) [0x00007FF67839F39C]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:31.522353" level="INFO">Typing text 'errado' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${INVALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:31.521720" elapsed="0.143728"/>
+<status status="NOT RUN" start="2025-06-02T13:35:52.473035" elapsed="0.000058"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:31.666377" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:31.666003" elapsed="0.104252"/>
+<status status="NOT RUN" start="2025-06-02T13:35:52.473437" elapsed="0.000047"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:31.772243" level="INFO">Clicking button 'xpath=//button'.</msg>
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:31.771765" elapsed="0.102333"/>
+<status status="NOT RUN" start="2025-06-02T13:35:52.473710" elapsed="0.000040"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-02T12:36:32.875138" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-02T12:36:31.874468" elapsed="1.000826"/>
+<status status="NOT RUN" start="2025-06-02T13:35:52.473969" elapsed="0.000043"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:32.876054" level="INFO">Verifying element 'id=error-message' contains exact text 'Usuário ou senha incorretos.'.</msg>
 <arg>id=error-message</arg>
 <arg>Usuário ou senha incorretos.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-06-02T12:36:32.875759" elapsed="0.035769"/>
+<status status="NOT RUN" start="2025-06-02T13:35:52.474237" elapsed="0.000041"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-02T12:36:32.918955" elapsed="2.236374"/>
+<status status="NOT RUN" start="2025-06-02T13:35:52.474505" elapsed="0.000040"/>
 </kw>
-<status status="PASS" start="2025-06-02T12:36:30.073034" elapsed="5.083017"/>
+<status status="FAIL" start="2025-06-02T13:35:45.933581" elapsed="6.541288">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782F59F4]
+	(No symbol) [0x00007FF6782E6789]
+	(No symbol) [0x00007FF6782E84F8]
+	(No symbol) [0x00007FF6782E6A96]
+	(No symbol) [0x00007FF6782E6516]
+	(No symbol) [0x00007FF6782E61DA]
+	(No symbol) [0x00007FF6782E3E8A]
+	(No symbol) [0x00007FF6782E465C]
+	(No symbol) [0x00007FF6782FCF3A]
+	(No symbol) [0x00007FF6783A013E]
+	(No symbol) [0x00007FF67837737A]
+	(No symbol) [0x00007FF67839F39C]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</status>
 </test>
-<test id="s1-t3" name="Login Com Senha Inválida" line="32">
+<test id="s1-t3" name="Login Com Senha Inválida" line="31">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:35.159126" level="INFO">Opening browser 'chrome' to base url 'file://C:\Users\User\Desktop\ESTUDO\projeto-robot\tests/../index.html'.</msg>
+<msg time="2025-06-02T13:35:52.480197" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8000/index.html'.</msg>
 <arg>${LOGIN_PAGE}</arg>
-<arg>${BROWSER}</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T12:36:35.158538" elapsed="1.457184"/>
+<status status="PASS" start="2025-06-02T13:35:52.479897" elapsed="3.766004"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:36.617419" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<msg time="2025-06-02T13:35:56.247688" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<msg time="2025-06-02T13:35:56.252658" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782D1B41]
+	(No symbol) [0x00007FF67837EC2E]
+	(No symbol) [0x00007FF67839ECC2]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</msg>
+<msg time="2025-06-02T13:35:56.311366" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782D1B41]
+	(No symbol) [0x00007FF67837EC2E]
+	(No symbol) [0x00007FF67839ECC2]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</msg>
 <arg>id=username</arg>
 <arg>${VALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T12:36:36.617033" elapsed="0.174916"/>
+<status status="FAIL" start="2025-06-02T13:35:56.246543" elapsed="0.073572">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782D1B41]
+	(No symbol) [0x00007FF67837EC2E]
+	(No symbol) [0x00007FF67839ECC2]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T12:36:36.793875" level="FAIL">Variable '${INVALID_PASSWORD}' not found. Did you mean:
-    ${VALID_PASSWORD}</msg>
 <arg>id=password</arg>
 <arg>${INVALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-06-02T12:36:36.792420" elapsed="0.001709">Variable '${INVALID_PASSWORD}' not found. Did you mean:
-    ${VALID_PASSWORD}</status>
+<status status="NOT RUN" start="2025-06-02T13:35:56.326206" elapsed="0.000098"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-06-02T12:36:36.794935" elapsed="0.000114"/>
+<status status="NOT RUN" start="2025-06-02T13:35:56.335926" elapsed="0.000121"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-06-02T12:36:36.795537" elapsed="0.000065"/>
+<status status="NOT RUN" start="2025-06-02T13:35:56.344257" elapsed="0.000116"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
 <arg>id=error-message</arg>
 <arg>Usuário ou senha incorretos.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="NOT RUN" start="2025-06-02T12:36:36.795903" elapsed="0.000046"/>
+<status status="NOT RUN" start="2025-06-02T13:35:56.345100" elapsed="0.000079"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-06-02T12:36:36.796266" elapsed="0.000049"/>
+<status status="NOT RUN" start="2025-06-02T13:35:56.345605" elapsed="0.000057"/>
 </kw>
-<status status="FAIL" start="2025-06-02T12:36:35.157532" elapsed="1.639194">Variable '${INVALID_PASSWORD}' not found. Did you mean:
-    ${VALID_PASSWORD}</status>
+<status status="FAIL" start="2025-06-02T13:35:52.479080" elapsed="3.867070">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782D1B41]
+	(No symbol) [0x00007FF67837EC2E]
+	(No symbol) [0x00007FF67839ECC2]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</status>
 </test>
-<status status="FAIL" start="2025-06-02T12:36:23.212669" elapsed="13.585271"/>
+<status status="FAIL" start="2025-06-02T13:35:38.523880" elapsed="17.828936"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Teste Login" id="s1" pass="2" fail="1" skip="0">Teste Login</stat>
+<stat name="Teste Login" id="s1" pass="0" fail="3" skip="0">Teste Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-06-02T12:36:23.213017" level="ERROR">Error in file 'C:\Users\User\Desktop\ESTUDO\projeto-robot\tests\teste_login.robot' on line 10: Setting variable '${INVALID_PASSWORD} 000000' failed: Invalid variable name '${INVALID_PASSWORD} 000000'.</msg>
+<msg time="2025-06-02T13:35:56.252658" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67852CF45+75717]
+	GetHandleVerifier [0x00007FF67852CFA0+75808]
+	(No symbol) [0x00007FF6782F8F9A]
+	(No symbol) [0x00007FF6782D1B41]
+	(No symbol) [0x00007FF67837EC2E]
+	(No symbol) [0x00007FF67839ECC2]
+	(No symbol) [0x00007FF678377153]
+	(No symbol) [0x00007FF678340421]
+	(No symbol) [0x00007FF6783411B3]
+	GetHandleVerifier [0x00007FF67882D71D+3223453]
+	GetHandleVerifier [0x00007FF678827CC2+3200322]
+	GetHandleVerifier [0x00007FF678845AF3+3322739]
+	GetHandleVerifier [0x00007FF678546A1A+180890]
+	GetHandleVerifier [0x00007FF67854E11F+211359]
+	GetHandleVerifier [0x00007FF678535294+109332]
+	GetHandleVerifier [0x00007FF678535442+109762]
+	GetHandleVerifier [0x00007FF67851BA59+4825]
+	BaseThreadInitThunk [0x00007FF8BD257374+20]
+	RtlUserThreadStart [0x00007FF8BEE1CC91+33]
+</msg>
 </errors>
 </robot>
