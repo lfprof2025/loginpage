@@ -30,16 +30,17 @@ jobs:
           sudo apt install -y wget unzip xvfb libnss3
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo dpkg -i google-chrome*.deb || sudo apt -f install -y
-          wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
-          unzip chromedriver_linux64.zip
-          sudo mv chromedriver /usr/local/bin/
+          wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/137.0.7151.55/linux64/chromedriver-linux64.zip
+          unzip chromedriver-linux64.zip
+          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+          chmod +x /usr/local/bin/chromedriver
 
       - name: Executar testes com Xvfb (modo headless)
         run: |
           Xvfb :99 & export DISPLAY=:99
           python3 -m http.server 8000 &
-          sleep 2
-          robot --variable LOGIN_PAGE:http://localhost:8000/index.html tests
+          sleep 3
+          robot tests
 
       - name: Salvar relatório
         uses: actions/upload-artifact@v4
